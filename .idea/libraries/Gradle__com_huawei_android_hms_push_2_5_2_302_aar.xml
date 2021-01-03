@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.huawei.android.hms:push:2.5.2.302@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/49da75cd189c1e9b32eed83803c27651/jetified-push-2.5.2.302/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/49da75cd189c1e9b32eed83803c27651/jetified-push-2.5.2.302/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/49da75cd189c1e9b32eed83803c27651/jetified-push-2.5.2.302/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/49da75cd189c1e9b32eed83803c27651/jetified-push-2.5.2.302/jars/libs/HMS_SDK_2.5.3.302.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.huawei.android.hms/push/2.5.2.302/cb63316a807e62dacc34803d83dd9c5ae721ced9/push-2.5.2.302-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.huawei.android.hms/push/2.5.2.302/7ebbff12c3598f396ffd594146db0495b909f6e8/push-2.5.2.302-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

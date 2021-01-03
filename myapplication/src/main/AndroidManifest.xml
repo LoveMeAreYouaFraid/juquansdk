@@ -114,7 +114,7 @@
 
         <!-- 音视频 -->
         <activity
-            android:name="teamavchat.activity.TeamAVChatActivity"
+            android:name=".teamavchat.activity.TeamAVChatActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/FullScreenTheme"
@@ -256,13 +256,13 @@
             android:windowSoftInputMode="adjustUnspecified|stateHidden" />
 
         <activity
-            android:name="com.netease.nim..activity.SystemMessageActivity"
+            android:name="com.netease.nim.demo.main.activity.SystemMessageActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="com.netease.nim..activity.CustomNotificationActivity"
+            android:name="com.netease.nim.demo.main.activity.CustomNotificationActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
@@ -281,21 +281,21 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.netease.nim.demoteam.activity.AdvancedTeamSearchActivity"
+            android:name="com.netease.nim.demo.team.activity.AdvancedTeamSearchActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.netease.nim.demoteam.activity.AdvancedTeamJoinActivity"
+            android:name="com.netease.nim.demo.team.activity.AdvancedTeamJoinActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.netease.nim..activity.TeamListActivity"
+            android:name="com.netease.nim.demo.main.activity.TeamListActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
@@ -303,20 +303,20 @@
 
         <!-- 全局搜索 -->
         <activity
-            android:name="com.netease.nim..activity.GlobalSearchActivity"
+            android:name="com.netease.nim.demo.main.activity.GlobalSearchActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/global_search_bg"
             android:windowSoftInputMode="stateUnspecified" />
 
         <activity
-            android:name="com.netease.nim..activity.GlobalSearchDetailActivity"
+            android:name="com.netease.nim.demo.main.activity.GlobalSearchDetailActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.netease.nim..activity.GlobalSearchDetailActivity2"
+            android:name="com.netease.nim.demo.main.activity.GlobalSearchDetailActivity2"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />

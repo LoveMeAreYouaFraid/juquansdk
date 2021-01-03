@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./myapplication/libs/nim-avchat-6.8.0.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/myapplication/libs/nim-avchat-6.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
