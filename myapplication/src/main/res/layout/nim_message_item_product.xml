@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="234dp"
+    android:layout_height="120dp"
+    android:padding="12dp"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:text=""
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/color_333333"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_goods_img"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+         />
+    <TextView
+        android:text=""
+        android:layout_toRightOf="@+id/iv_goods_img"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:id="@+id/tv_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F64054"
+        android:textSize="14sp" />
+
+    <TextView
+        android:text="去购买"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/nim_btn_go_product"
+        android:id="@+id/btn_goto_product"
+        android:gravity="center"
+        android:layout_width="64dp"
+        android:layout_height="28dp"
+        android:textColor="@color/color_333333"
+        android:textSize="15sp" />
+</RelativeLayout>

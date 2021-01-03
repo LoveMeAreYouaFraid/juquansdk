@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:background="@drawable/nim_bg_setgroup"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="198dp"
+            android:layout_height="166dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/nim_setgroup_bg_"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:text="请设置圈子分类～"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/btn_dialog_setup"
+            android:text="前往设置"
+            android:layout_width="120dp"
+            android:layout_height="37dp"
+            android:gravity="center"
+            android:textColor="#FEFEFE"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/nim_dialog_btn_groupclassify"
+             />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/btn_dialog_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/nim_close_setgroup_dialog"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

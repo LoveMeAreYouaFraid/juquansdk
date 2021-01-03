@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextAppearance="@style/Toolbar.TitleText">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <com.netease.nim.uikit.common.ui.imageview.HeadImageView-->
+<!--            android:id="@+id/team_member_head_view"-->
+<!--            android:layout_width="69dp"-->
+<!--            android:layout_height="69dp"-->
+<!--            android:layout_gravity="center_horizontal" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/team_member_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="name"-->
+<!--            android:textColor="@color/color_black_333333"-->
+<!--            android:textSize="@dimen/text_size_16" />-->
+<!--    </LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:background="@color/white"
+        android:paddingTop="13dp">
+
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/user_head_image"
+            android:layout_width="@dimen/avatar_size_in_profile"
+            android:layout_height="@dimen/avatar_size_in_profile"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/user_head_image"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/nick_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/gender_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@mipmap/uikit_mine_setup_male" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_account"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/user_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#999999"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line_d9d9d9" />
+
+    <RelativeLayout
+        android:id="@+id/nickname_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/isetting_item_height"
+        >
+
+        <TextView
+            android:id="@+id/team_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:text="@string/team_nickname"
+            android:textColor="@color/color_black_333333"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/team_nickname_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/team_nickname"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/nim_arrow_right"
+            android:gravity="right|center_vertical"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:hint=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_17" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line_d9d9d9" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/report_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/isetting_item_height"
+        >
+
+        <TextView
+            android:id="@+id/team_member_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="举报"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_black_333333"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/team_member_report"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/nim_arrow_right"
+            android:gravity="right|center_vertical"
+            android:hint=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_17" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line_d9d9d9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/deletefriend_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/isetting_item_height"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/team_member_deletefriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:text="删除好友"
+            android:textColor="@color/color_black_333333"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/team_member_deletefriend"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/nim_arrow_right"
+            android:gravity="right|center_vertical"
+            android:hint=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_17" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line_d9d9d9" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/addriend_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/isetting_item_height"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/team_member_addfriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:text="添加好友"
+            android:textColor="@color/color_black_333333"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/team_member_addfriend"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/nim_arrow_right"
+            android:gravity="right|center_vertical"
+            android:hint=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_17" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line_d9d9d9" />
+    </RelativeLayout>
+    <include
+        android:id="@+id/team_member_black"
+        layout="@layout/nim_user_profile_toggle_item" />
+
+    <RelativeLayout
+        android:id="@+id/identity_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/isetting_item_height"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:id="@+id/team_member_identity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/team_identity"
+            android:textColor="@color/color_black_333333"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/team_member_identity_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/team_member_identity"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/nim_arrow_right"
+            android:gravity="right|center_vertical"
+            android:hint=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_17" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line_d9d9d9" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/invitor_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/isetting_item_height"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/invitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="@string/member_invitor"
+            android:textColor="@color/color_black_333333"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/invitor_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/dp_size_20"
+            android:layout_toRightOf="@id/invitor"
+            android:gravity="right|center_vertical"
+            android:hint="@string/no_invitor"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_17" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line_d9d9d9" />
+    </RelativeLayout>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_split_line_d9d9d9" />
+
+    <LinearLayout
+        android:id="@+id/toggle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/team_remove_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="30dp"
+        android:background="@mipmap/uikit_btn_group"
+        android:text="移除本群"
+        android:textSize="17sp"
+        android:textColor="@color/color_black_333333" />
+    <Button
+        android:id="@+id/team_addfriend_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="30dp"
+        android:background="@mipmap/uikit_btn_group"
+        android:text="添加好友"
+        android:textSize="17sp"
+        android:visibility="gone"
+        android:textColor="@color/color_black_333333" />
+</LinearLayout>

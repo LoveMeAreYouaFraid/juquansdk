@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="255dp"
+    android:layout_height="100dp"
+    android:id="@+id/ll_trans_credit"
+    android:background="@drawable/nim_bg_get_trans_credit"
+    >
+
+    <ImageView
+        android:id="@+id/nim_ic_credit_trans"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/nim_ic_credit_trans"
+        />
+    <TextView
+        android:layout_toRightOf="@+id/nim_ic_credit_trans"
+        android:text="20.00元\n转账给你"
+        android:id="@+id/tv_credit_trans_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:text="抵用金转账"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
